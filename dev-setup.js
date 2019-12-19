@@ -1,3 +1,5 @@
+/* eslint-disable import/no-extraneous-dependencies, no-console */
+
 const prompts = require('prompts');
 const fs = require('fs-extra');
 const _ = require('lodash');
@@ -27,7 +29,7 @@ async function main() {
       `CHECKFRONT_SECRET=${response.secret}`,
     ],
     '\n'));
-  console.log('Finished creating .env file'); // eslint-disable-line no-console
+  console.log('Finished creating .env file');
 }
 
 main();
