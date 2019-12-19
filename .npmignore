@@ -1,0 +1,6 @@
+dev-setup.js
+**/__mocks__/**
+**/__tests__/**
+.vscode
+.eslintrc
+jest.config.js

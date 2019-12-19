@@ -1,0 +1,15 @@
+{
+  "extends": "airbnb-base",
+  "overrides": [
+    {
+      "files": [
+        "**/*.test.js",
+        "**/*.scenario.js",
+        "**/__mocks__/**/*.js"
+      ],
+      "env": {
+        "jest": true
+      }
+    }
+  ]
+}
