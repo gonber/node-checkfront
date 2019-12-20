@@ -27,3 +27,8 @@ test('lists bookings with params', async () => {
   const bookings = await checkfront.bookings.list(params);
   expect(bookings).toHaveLength(0);
 });
+
+test('retrieves booking', async () => {
+  const booking = await checkfront.bookings.retrieve(1);
+  expect(booking.booking_id).toEqual(1);
+});

@@ -35,7 +35,17 @@ Retrieve a listing of bookings in the system.
 ```JavaScript
 const bookings = await checkfront.bookings.list({
     status_id: '',
-})
+});
+```
+
+#### checkfront.bookings.retrieve()
+
+[Documentation](http://api.checkfront.com/ref/booking/booking.html#booking-booking-id)
+
+Retrieve extended information on a specific booking.
+
+```JavaScript
+const booking = await checkfront.bookings.retrieve(bookingId);
 ```
 
 ### Contribution Guidelines
