@@ -1,3 +1,4 @@
 {
-  "jest.pathToJest": "yarn testing",
+  "jest.pathToJest": "yarn test --",
+  "jest.showCoverageOnLoad": true,
 }

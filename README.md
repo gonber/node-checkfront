@@ -33,7 +33,9 @@ const checkfront = require('checkfront')({
 Retrieve a listing of bookings in the system.
 
 ```JavaScript
-const bookings = await checkfront.bookings.list()
+const bookings = await checkfront.bookings.list({
+    status_id: '',
+})
 ```
 
 ### Contribution Guidelines

@@ -3,6 +3,7 @@ const config = {
   errorOnDeprecated: true,
   testEnvironment: 'node',
   setupFilesAfterEnv: ['jest-extended'],
+  collectCoverage: true,
 };
 
 module.exports = config;

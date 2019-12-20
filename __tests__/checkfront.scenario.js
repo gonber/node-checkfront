@@ -19,5 +19,11 @@ const checkfront = Checkfront(config);
 
 test('lists bookings', async () => {
   const bookings = await checkfront.bookings.list();
-  expect(bookings['booking/index']).toBeDefined();
+  expect(bookings).toHaveLength(1);
+});
+
+test('lists bookings with params', async () => {
+  const params = { status_id: 'notAStatusId' };
+  const bookings = await checkfront.bookings.list(params);
+  expect(bookings).toHaveLength(0);
 });
