@@ -1,4 +1,7 @@
 {
   "jest.pathToJest": "yarn test --",
   "jest.showCoverageOnLoad": true,
+  "cSpell.words": [
+    "checkfront"
+  ],
 }
