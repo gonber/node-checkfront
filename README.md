@@ -26,7 +26,9 @@ const checkfront = require('checkfront')({
 
 ### Methods
 
-#### checkfront.bookings.list()
+#### Bookings
+
+##### checkfront.bookings.list()
 
 [Documentation](http://api.checkfront.com/ref/booking.html#booking)
 
@@ -38,7 +40,7 @@ const bookings = await checkfront.bookings.list({
 });
 ```
 
-#### checkfront.bookings.retrieve()
+##### checkfront.bookings.retrieve()
 
 [Documentation](http://api.checkfront.com/ref/booking/booking.html#booking-booking-id)
 
@@ -46,6 +48,28 @@ Retrieve extended information on a specific booking.
 
 ```JavaScript
 const booking = await checkfront.bookings.retrieve(bookingId);
+```
+
+#### Items
+
+##### checkfront.items.list()
+
+[Documentation](http://api.checkfront.com/ref/item.html#get--api-3.0-item)
+
+Retrieve a list of the enabled items in the system.
+
+```JavaScript
+const items = await checkfront.items.list();
+```
+
+##### checkfront.items.retrieve()
+
+[Documentation](http://api.checkfront.com/ref/item.html#get--api-3.0-item-item_id)
+
+Retrieve details for a single item.
+
+```JavaScript
+const item = await checkfront.items.retrieve(itemId);
 ```
 
 ### Contribution Guidelines

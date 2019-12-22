@@ -1,11 +1,15 @@
 {
   "name": "checkfront",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Node module for the Checkfront API http://api.checkfront.com/",
   "main": "index.js",
   "repository": "git@github.com:gonber/node-checkfront.git",
   "author": "gonber <goncalobernardo@gmail.com>",
   "license": "MIT",
+  "keywords": [
+    "Booking",
+    "Reservation"
+  ],
   "engines": {
     "node": ">=8.10.0"
   },
@@ -14,7 +18,7 @@
     "test": "jest .+\\.test\\.js",
     "testing": "jest --watch .+\\.test\\.js",
     "test-scenario": "jest .+\\.scenario\\.js",
-    "coverage": "jest --coverage --no-cache",
+    "coverage": "jest --coverage --no-cache .+\\.test\\.js",
     "lint": "eslint --max-warnings=0 --fix ."
   },
   "dependencies": {
